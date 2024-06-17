@@ -23,8 +23,9 @@ section {
 
 .form-box {
     position: relative;
-    width: 400px;
-    height: 450px;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
     background: transparent;
     border: none;
     border-radius: 20px;
@@ -32,12 +33,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px 0;
 }
 
 h2 {
     font-size: 2em;
     color: #fff;
     text-align: center;
+    pointer-events: none;
 }
 
 .inputbox {
@@ -60,7 +63,7 @@ h2 {
     background: transparent;
     border: none;
     outline: none;
-    font-size: 1em;
+    font-size: 1rem;
     padding: 0 35px 0 5px;
     color: #fff;
     border-bottom: 2px solid #fff;
@@ -98,7 +101,6 @@ button {
 @media screen and (max-width:900px) {
     .form-box {
         width: 100%;
-        backdrop-filter: blur(15px) brightness(100%);
         border-radius: 0px;
     }
 }
